@@ -28,3 +28,17 @@ form.addEventListener ("submit", function(event) {
     alert("Application submitted successfully!");
     form.reset();
 });
+const toggle = 
+document.querySelector (".menu-toggle");
+const navLinks = 
+document.querySelector (".nav-links");
+toggle.addEventListener ("click", () => {
+  console.log("clicked");
+  navLinks.classList.toggle("active");
+  overLay.classList.toggle("active");
+});
+const overLay = document.querySelector (".overlay")
+overLay.addEventListener ("click", function () {
+  navLinks.classList.remove ("active");
+  overLay.classList.remove("active");
+});

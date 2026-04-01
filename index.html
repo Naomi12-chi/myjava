@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Tutorial Site</title>
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <nav class="navbar">
         <h1 class="logo">Js Academy</h1>
+        <div class="menu-toggle">&#9776</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -21,7 +23,7 @@
         <header>
             <h1>Learn JavaScript From Scratch</h1>
             <p class="head">Master JavaScript step by step, even if you have no prior experience. Build real projects and gain confidence as a developer.</p>
-            <a href="#apply" class="join-btn" style="color: white;">Join the program</a>
+            <a href="#apply" class="join-btn" style="color: white; ">Join the program</a>
         </header>
         <main>
     </section>
@@ -64,12 +66,16 @@ This course is designed to take you from beginner to confident developer through
         <label for="">Age:</label>
         <input type="number" placeholder="Enter your age" id="age">
         <br><br>
+        <div class="gender-group">
         <p>Gender:</p>
+        <div class="gender-options">
         <input type="radio" name="Gender">Male
         <input type="radio" name="Gender">Female
         <br><br>
         <button type="submit">Submit Application</button>
         <br>
+        </div>
+        </div>
     </form>
     <p>We will review your application and get back to you shortly.</p>
 </section>
